@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  <!--Tell internet explore use latest version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iKai Home</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/ikai-style.css">
+  <link rel="stylesheet" type="text/css" href="css/user-style.css">
+
+  <style>
+    /* 设置浏览器宽度不小于1201px时*/ 
+    @media screen and (min-width: 1367px) { 
+      #logo { 
+        background: url('../image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 5px 5px 15px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin-top: 15px; 
+        margin-right: 15px; 
+      }
+      iframe {
+        width: 375px;
+        height: 250px;
+      } 
+    } 
+    /* 设置了浏览器宽度不大于1366px时*/ 
+    @media screen and (max-width: 1366px) { 
+      #logo { 
+        background: url('/image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 5px 5px 25px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin: 15px 30px 5px 10px;
+      }
+      iframe {width: 375px;} 
+      iframe {height: 250px;}
+    } 
+    /* 设置了浏览器宽度不大于960px时 iPad Pro & Laptop 1024*/  
+    @media screen and (max-width: 1024px) { 
+      #logo { 
+        background: url('/image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 5px 5px 25px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin: 15px 25px 5px 10px;
+      }
+      iframe {
+        padding-top: 50px; 
+        width: 350px;
+        height: 250px;
+      } 
+    } 
+    /* 设置了浏览器宽度不大于768px时 iPad 768*/ 
+    
+    @media screen and (max-width: 768px) { 
+      #logo { 
+        background: url('/image/logo/first1.png') no-repeat; 
+        width: 148px; 
+        height: 35px; 
+        margin: 12px 0px 5px 0px; 
+      }
+      .languageholder { 
+        float: right; 
+        text-align:center; 
+        margin: 15px 0px 5px 0px;
+      }
+      iframe{
+        padding-top: 10px;
+        width: 645px;
+        height: 430px;
+      }     
+    } 
+    /* 设置了浏览器宽度不大于768px时 iPad 736*/ 
+    
+    @media screen and (max-width: 736px) { 
+      #logo { 
+        background: url('/image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 0px 5px 45px; 
+      }
+      .languageholder {
+        text-align: center;
+        margin-right: 5%;           
+        margin-top: 13px;
+      }
+      .navbar-header button.navbar-toggle {
+        margin-right: 45px;
+      }
+    } 
+    /* 设置了浏览器宽度不大于480时*/ 
+    @media screen and (max-width: 480px) { 
+      #logo { 
+        background: url('/image/logo/first1.png') no-repeat; 
+        width: 148px; 
+        height: 35px; 
+        margin: 14px 5px 5px 25px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin: 12px 40px 5px 0px;
+      }
+      iframe{
+        padding-top: 0px;
+        width: 320px;
+        height: 220px;
+      } 
+      .navbar-header button.navbar-toggle {
+        margin-right: 25px;
+      }
+      } 
+      @media screen and (max-width: 320px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 12px 0px 5px 10px;
+        }
+        .languageholder { 
+          float: right; 
+          text-align:center; 
+          margin-right: 5%;           
+          margin-top: 13px;
+        }
+        .navbar-header button.navbar-toggle {
+          margin-right: 15px;
+        }
+      } 
+    } 
+  </style>
+
+</head>
+
+<body>
+  <header>
+   <nav class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container-fluid">
+       <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a id="logo" class="navbar-brand" href="index.html"></a>
+         <div class="languageholder visible-xs">
+               <ul id="lan-mode-left" class="language-mode">
+                   <li><a href="en/index.html" class="language-img"></a></li>
+               </ul>
+         </div>
+       </div>
+
+       <!-- Collect the nav links, forms, and other content for toggling -->
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <div class="languageholder hidden-xs">
+               <ul class="language-mode">
+                   <li><a href="en/index.html" class="language-img"></a></li>
+               </ul>
+         </div>
+         <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="frc.html">FRC</a></li>
+            <li><a href="team.html">队伍</a></li>
+            <li><a href="blog.html">博客</a></li>
+            <li><a href="sponsor.html">赞助商</a></li>
+            <li><a href="contact.html">联系我们</a></li>           
+         </ul>
+       </div><!-- /.navbar-collapse -->
+     </div><!-- /.container-fluid -->
+   </nav>
+  </header>
+
+  <!--page-header -->
+    <div class="page-header">
+    <h1 class="text-center"><small>队伍赞助商</small></h1>
+    </div>
+    <div class="row-p5">
+      <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="thumbnail home-sponsor-show">
+        <a href="http://www.firstinspires.org/" target="view_window"><img src="image/sponsor/s1.jpg" alt="Home Pitcure" class="img-responsive"></a> 
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="thumbnail home-sponsor-show">
+          <a href="http://www.andymark.com/" target="view_window"><img src="image/sponsor/s2.png" alt="Home Pitcure" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="thumbnail home-sponsor-show">
+          <a href="http://www.dadalele.cn/" target="view_window"><img src="image/sponsor/s3.png" alt="Home Pitcure" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="thumbnail home-sponsor-show">
+          <a href="https://www.cuyra.cn" target="view_window"><img src="image/sponsor/s4.png" alt="Home Pitcure" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="thumbnail home-sponsor-show">
+          <a href="http://www.ptc.com/" target="view_window"><img src="image/sponsor/s5.png" alt="Home Pitcure" class="img-responsive"></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6">
+        <div class="thumbnail home-sponsor-show">
+          <a href="https://github.com/" target="view_window"><img src="image/sponsor/s6.png" alt="Home Pitcure" class="img-responsive"></a>
+        </div>
+      </div>
+    </div>
+
+  <div class="page-header">
+    <h1 class="text-center"><small>成为我们的赞助商</small></h1>
+  </div>
+  <div class="row-p5">
+    <div class="sponsor-content col-md-7 col-sm-12 col-xs-12">
+      <p><strong>Combining the excitement of sport with the rigors of science and technology.</strong></p><p>It can be found <a href="http://www.firstinspires.org/robotics/frc/what-is-first-robotics-competition" target="_blank">here</a>.<br/> </p> 
+      <p>We call FIRST Robotics Competition the ultimate Sport for the Mind.  </p>
+      <p>High-school student participants call it “the hardest fun you’ll ever have.” </p>
+      <p>Under strict rules, limited resources, and an intense six-week time limit, teams of students are challenged to raise funds, design a team "brand," hone teamwork skills, and build and program industrial-size robots to play a difficult field game against like-minded competitors. It’s as close to real-world engineering as a student can get. Volunteer professional mentors lend their time and talents to guide each team. Each season ends with an exciting FIRST Championship.</p>  
+    </div>
+    <div class="sponsor-img0 col-md-5 col-sm-12 col-xs-12">
+      <img src="image/sponsor/s0.jpg" alt="Home Pitcure" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="page-header">
+    <h1 class="text-center"><small>冠名赞助商 - $5000+</small></h1>
+  </div>
+  <div class="row-p5">
+    <div class="sponsor-content col-md-7 col-sm-12 col-xs-12">
+         <ul>
+           <li><p><strong>Tournaments: Your company thanked during competition alliance selections nationally
+televised on the Discover Channel and invitation to travel to tournaments. </strong></p></li>
+           <li><p><strong>Robot: Large logo of business. </strong></p></li>
+           <li><p><strong>Banner: Large logo (displayed at events and tournaments). </strong></p></li>
+           <li><p><strong>Team Shirts: Large logo on back of shirts (worn at events and tournaments). </strong></p></li>
+           <li><p><strong>Website: Logo & link on sponsorship page and logo on first page.</strong></p></li>
+           <li><p><strong>Memorabilia: Thank you plaque and Team shirt. </strong></p></li>
+           <li><p><strong>Invitation to end of year celebration.</strong></p></li>
+         </ul>
+      </p>   
+    </div>
+    <div class="sponsor-img1 col-md-5 col-sm-12 col-xs-12">
+      <img src="image/sponsor/s11.png" alt="Home Pitcure" class="img-responsive">
+    </div>
+  </div>
+
+    <div class="page-header">
+      <h1 class="text-center"><small>白金赞助商 -  $2000 - $5000</small></h1>
+    </div>
+    <div class="row-p5">
+      <div class="sponsor-content col-md-7 col-sm-12 col-xs-12">
+           <ul>
+             <li><p><strong>Robot: Medium logo of business.</strong></p></li>
+             <li><p><strong>Banner: Medium logo (displayed at events and tournaments)</strong></p></li>
+             <li><p><strong>Team Shirts: Large logo on back of shirts (worn at events and tournaments). </strong></p></li>
+             <li><p><strong>Website: Logo and link on sponsorship page.</strong></p></li>
+             <li><p><strong>Memorabilia: Thank you plaque and Team shirt. </strong></p></li>
+           </ul>
+        </p>   
+      </div>
+      <div class="sponsor-img2 col-md-5 col-sm-12 col-xs-12">
+        <img src="image/sponsor/s22.png" alt="Home Pitcure" class="img-responsive">
+      </div>
+    </div>
+
+      <div class="page-header">
+        <h1 class="text-center"><small>黄金赞助商 -  $1000 - $2000</small></h1>
+      </div>
+      <div class="row-p5">
+        <div class="sponsor-content col-md-7 col-sm-12 col-xs-12">
+             <ul>
+               <li><p><strong>Robot: Small logo of business</strong></p></li>
+               <li><p><strong>Banner: Small logo (displayed at events and tournaments). </strong></p></li>
+               <li><p><strong>Team Shirts: Small logo on back of shirts (worn at events and tournaments). </strong></p></li>
+               <li><p><strong>Website: Logo and link on sponsorship page.</strong></p></li>
+               <li><p><strong>Memorabilia: Thank you plaque and Team shirt. </strong></p></li>
+             </ul>
+          </p>   
+        </div>
+        <div class="sponsor-img3 col-md-5 col-sm-12 col-xs-12">
+          <img src="image/sponsor/s33.png" alt="Home Pitcure" class="img-responsive">
+        </div>
+      </div>
+
+        <div class="page-header">
+          <h1 class="text-center"><small>白银赞助商 -  $100 - $1000</small></h1>
+        </div>
+        <div class="row-p5">
+          <div class="sponsor-content col-md-7 col-sm-12 col-xs-12">
+               <ul>
+                 <li><p><strong>Robot: Business card size logo of business. </strong></p></li>
+                 <li><p><strong>Banner: Business card size logo (displayed at events and tournaments). </strong></p></li>
+                 <li><p><strong>Team Shirts: Line of text on shirt (worn at events and tournaments). </strong></p></li>
+                 <li><p><strong>Website: Logo and link on sponsorship page.</strong></p></li>
+                 <li><p><strong>Memorabilia: Thank you plaque and Team shirt. </strong></p></li>
+               </ul>
+            </p>   
+          </div>
+          <div class="sponsor-img4 col-md-5 col-sm-12 col-xs-12">
+            <img src="image/sponsor/s44.jpg" alt="Home Pitcure" class="img-responsive">
+          </div>
+        </div>
+
+          <div class="page-header">
+            <h1 class="text-center"><small>黄铜赞助商 -  $25-$100</small></h1>
+          </div>
+          <div class="row-p5">
+            <div class="sponsor-content col-md-7 col-sm-12 col-xs-12">
+                 <ul>
+                   <li><p><strong>Robot: Line of text with business name on robot. </strong></p></li>
+                   <li><p><strong>Social media “Shout-out” on Team Facebook and Twitter page. </strong></p></li>
+                   <li><p><strong>Memorabilia: Thank you letter. </strong></p></li>
+                 </ul>
+              </p>   
+            </div>
+            <div class="sponsor-img5 col-md-5 col-sm-12 col-xs-12">
+              <img src="image/sponsor/s55.png" alt="Home Pitcure" class="img-responsive">
+            </div>
+          </div>
+
+           <footer class="panel-footer">
+            <div class="container-1">
+              <div class="row-p5">
+                <section id="hours" class="col-sm-3">
+                  <p>FRC<br>
+                   机器人挑战赛 <br>
+                  获得启示和认可 <br>
+                  成为科学和技术的领导者 </p>
+
+                  <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-3">
+                  <span>地址：</span><br>
+                  东5楼，515栋<br>
+                  八卦二路, 鹏基工业区<br>
+                  邮编50600，深圳市福田区
+
+                  <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-3">
+                  <p>赞助：<br>
+                  深圳市搭搭乐乐 <br>
+                  文化传播有限公司<br>
+                  中国城市青少年机器人联盟 </p>
+                   <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-3">
+                  <p>版权：<br>
+                  姓名：乔凯 <br>
+                  手机： 137-9896-5581<br>
+                  邮箱：<a class="linkbg" href="mailto:your@email.com">1718688902@qq.com</a>
+                </section>
+
+              </div>
+            </div>
+          </footer>
+
+    <div class="row-p0">
+       <div class="footer-last">
+         <a class="pull-left hidden-xs col-md-5 col-sm-6 col-xs-12">&copy; Copyright 2016 QiaoKai. All rights reversed.</a>
+         <div>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="index.html">Home</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="frc.html">FRC</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="team.html">Team</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="blog.html">Blog</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="sponsor.html">Spon.</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="contact.html">Cont.</a>
+         </div>
+       </div>
+    </div>
+
+
+  <!-- jquery(jquery JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/iKai-script.js"></script>
+  <script type="text/javascript" src="js/user-script.js"></script>
+
+</body>
+</html>

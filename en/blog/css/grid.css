@@ -1,0 +1,32 @@
+/* Teasers / Portfolio */
+
+    h3.info { margin-bottom: 5px; margin-top: -5px; }
+    .lightlabel { float: left; color: #ccc; width: 50px; }
+    .infofield { float: left; }
+    .teaser { margin-bottom: 20px; padding-bottom: 16px; background: #fff; border-bottom: 1px solid #ddd; -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); }
+    .portfolio .nopadding { margin-bottom: 0px; }
+    a.portfolio_selector { float: left; font-size: 11px; line-height: 20px; font-weight: normal; font-style: italic; color: #fff; background-color: #777; padding-left: 13px; padding-right: 13px; padding-top: 5px; padding-bottom: 5px; color: #fff; display: inline-block; border-bottom: 1px solid #444; text-shadow: 0px 1px 0px #444; }
+    .portfolio_filter ul { float: left; margin: 0; padding: 0; margin-bottom: 10px; }
+    .portfolio_filter ul li { margin: 0; padding: 0; float: left; list-style-type: none; display: inline-block; margin-right: 1px; margin-bottom: 1px; }
+    .portfolio_filter ul li:first-child a.portfolio_selector { -moz-border-radius:3px 0 0 3px; -webkit-border-top-left-radius:3px; -webkit-border-bottom-left-radius:3px; border-top-left-radius:3px; border-bottom-left-radius:3px; }
+    .portfolio_filter ul li:last-child a.portfolio_selector { -moz-border-radius:0 3px 3px 0; -webkit-border-top-right-radius:3px; -webkit-border-bottom-right-radius:3px; border-top-right-radius:3px; border-bottom-right-radius:3px; }
+    .teasers img, .teasers_large img { float: left; }
+    .teasers .topline, .teasers .subline { float: left; text-align: center; width:180px; padding-left: 20px; padding-right: 20px; }
+    .teasers .topline { padding-top: 19px; border-top: 3px solid #ddd; }
+    .teasers_large .topline, .teasers_large .subline { float: left; }
+    .teaser .flexslider {  margin-bottom: 12px;  }
+    .teaser .scalevid { margin-bottom: 1px; }
+    .teaser .mediaitem { margin-bottom: 1px; }
+    a .overlay { background: #34b489 url(../images/tiles/linegrid.png) repeat 0 0; }
+    a .overlaytext{ background: url(../images/tiles/cross.png) no-repeat; width: 51px; height: 51px; }
+
+    /* Dividers */
+
+        .divide { height: 30px; margin-bottom: 23px; margin-top: 27px; }
+        .divide.notop { margin-top: -8px; }
+        .dividerline { position: absolute; z-index: 0; width: 940px; height: 0px; border-bottom: 1px solid #ddd; margin-top: 32px; }
+        .titledivider { position: absolute; z-index: 1; }
+        .divide h3 { font-size: 13px; font-weight: bold; width: 100%; text-transform: uppercase; }
+        .noheadline { height: 20px; }
+        .bottomadjust { padding-bottom: 40px; }
+        .divide .rightlink{  position: relative; float: right; padding-left: 10px; margin-top: 7px; z-index: 1; }

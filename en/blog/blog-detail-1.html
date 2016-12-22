@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  <!--Tell internet explore use latest version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iKai Home</title>
+  <link rel="shortcut icon" href="images/logo/FIRST28.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/ikai-style.css">
+  <link rel="stylesheet" type="text/css" href="css/user-style.css">
+
+    <style>
+      /* 设置浏览器宽度不小于1201px时*/ 
+      @media screen and (min-width: 1367px) { 
+        #logo { 
+          background: url('../image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 15px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin-top: 15px; 
+          margin-right: 15px; 
+        }
+        iframe {
+          width: 375px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c1.png') no-repeat;
+          height: 450px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于1366px时*/ 
+      @media screen and (max-width: 1366px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 30px 5px 10px;
+        }
+        iframe {width: 375px;} 
+        iframe {height: 250px;}
+        .home-contact {
+          background: url('../image/banner/c11.png') no-repeat;
+          height: 425px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于960px时 iPad Pro & Laptop 1024*/  
+      @media screen and (max-width: 1024px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 25px 5px 10px;
+        }
+        iframe {
+          padding-top: 50px; 
+          width: 350px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c111.png') no-repeat;
+          height: 400px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 768*/ 
+      
+      @media screen and (max-width: 768px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 12px 0px 5px 0px; 
+        }
+        .languageholder { 
+          float: right; 
+          text-align:center; 
+          margin: 15px 0px 5px 0px;
+        }
+        iframe{
+          padding-top: 10px;
+          width: 645px;
+          height: 430px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 230px;
+        }      
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 736*/ 
+      
+      @media screen and (max-width: 736px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 0px 5px 45px; 
+        }
+        .languageholder {
+          text-align: center;
+          margin-right: 5%;           
+          margin-top: 13px;
+        }
+        .navbar-header button.navbar-toggle {
+          margin-right: 45px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 200px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于480时*/ 
+      @media screen and (max-width: 480px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 14px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 12px 40px 5px 0px;
+        }
+        iframe{
+          padding-top: 0px;
+          width: 320px;
+          height: 220px;
+        } 
+        .navbar-header button.navbar-toggle {
+          margin-right: 25px;
+        }
+        .home-contact {
+          background: url('../image/banner/c11111.png') no-repeat;
+          height: 130px;
+        }
+        } 
+        @media screen and (max-width: 320px) { 
+          #logo { 
+            background: url('/image/logo/first1.png') no-repeat; 
+            width: 148px; 
+            height: 35px; 
+            margin: 12px 0px 5px 10px;
+          }
+          .languageholder { 
+            float: right; 
+            text-align:center; 
+            margin-right: 5%;           
+            margin-top: 13px;
+          }
+          .navbar-header button.navbar-toggle {
+            margin-right: 15px;
+          }
+          iframe{
+            padding-top: 0px;
+            width: 260px;
+            height: 180px;
+          }
+          .home-contact {
+            background: url('../image/banner/c11111.png') no-repeat;
+            height: 120px;
+          }
+        } 
+      } 
+    </style>
+    
+</head>
+
+<body>
+
+  <div class="row-p5C">
+     <div class="blog-banner hidden-xs">
+          <div class="hidden-xs">
+              <p><a class="btn btn-lg btn blog-banner-pre-btn" href="contact.html" role="button">Pre Blog &nbsp;<span class="glyphicon glyphicon-hand-up"></span></a></p>
+              <h1 class="blog-banner-title">Build Robot Train </h1>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <button type="button" id="blog-user-btn" class="btn btn-default btn-lg blog-banner-info pull-right">
+                  <span class="glyphicon glyphicon-user"></span> &nbsp;Qiao Kai & Qiao Kai
+                </button>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <button type="button" id="blog-user-btn" class="btn btn-default btn-lg blog-banner-info pull-left">
+                  <span class="glyphicon glyphicon-calendar"></span> &nbsp;Feb 24, 2016
+                </button>
+              </div>
+          </div>
+     </div>
+   </div>
+    
+    <!--page-header -->
+    <div class="page-header">
+    <h1 class="text-center"><small>Design The Robot</small></h1>
+    </div>
+    <div class="row-p5">
+    <div class="frc-content col-md-8 col-sm-12 col-xs-12">
+    <p><strong>Combining the excitement of sport with the rigors of science and technology.</strong></p><p>It can be found <a href="http://www.firstinspires.org/robotics/frc/what-is-first-robotics-competition" target="_blank">here</a>.<br/> </p> We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.” <p>Under strict rules, limited resources, and an intense six-week time limit, teams of students are challenged to raise funds, design a team "brand," hone teamwork skills, and build and program industrial-size robots to play a difficult field game against like-minded competitors. It’s as close to real-world engineering as a student can get. Volunteer professional mentors lend their time and talents to guide each team. Each season ends with an exciting FIRST Championship.</p>  </div>
+    <div class="frc-video col-md-4 col-sm-12 col-xs-12">
+       <img src="image/b1/b1.jpg" alt="Home Pitcure" class="img-responsive">
+    </div>
+    </div>     
+
+    <div class="page-header">
+    <h1 class="text-center"><small></small></h1>
+    </div>
+
+    <div class="row-p5C">
+      <div class="blog-banner hidden-xs">
+        <div class="hidden-xs">
+          <h1 class="blog-banner-title">Build Robot Train </h1>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <button type="button" id="blog-user-btn" class="btn btn-default btn-lg blog-banner-info pull-right">
+                <span class="glyphicon glyphicon-user"></span> &nbsp;Qiao Kai
+              </button>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <button type="button" id="blog-user-btn" class="btn btn-default btn-lg blog-banner-info pull-left">
+                <span class="glyphicon glyphicon-calendar"></span> &nbsp;Feb 24, 2016
+              </button>
+            </div>
+               <p><a class="btn btn-lg btn blog-banner-pre-btn" href="contact.html" role="button">Next Blog &nbsp;<span class="glyphicon glyphicon-hand-down"></span></a></p>
+        </div>
+      </div>
+    </div>
+
+  <!-- jquery(jquery JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/iKai-script.js"></script>
+  <script type="text/javascript" src="js/user-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  <!--Tell internet explore use latest version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iKai Home</title>
+  <link rel="shortcut icon" href="images/logo/FIRST28.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/ikai-style.css">
+  <link rel="stylesheet" type="text/css" href="css/user-style.css">
+
+    <style>
+      /* 设置浏览器宽度不小于1201px时*/ 
+      @media screen and (min-width: 1367px) { 
+        #logo { 
+          background: url('../image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 15px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin-top: 15px; 
+          margin-right: 15px; 
+        }
+        iframe {
+          width: 375px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c1.png') no-repeat;
+          height: 450px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于1366px时*/ 
+      @media screen and (max-width: 1366px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 30px 5px 10px;
+        }
+        iframe {width: 375px;} 
+        iframe {height: 250px;}
+        .home-contact {
+          background: url('../image/banner/c11.png') no-repeat;
+          height: 425px;
+        }
+        .home-contact-btn:hover {
+            margin-top: 3.5%;
+        }
+      } 
+      /* 设置了浏览器宽度不大于960px时 iPad Pro & Laptop 1024*/  
+      @media screen and (max-width: 1024px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 15px 25px 5px 10px;
+        }
+        iframe {
+          padding-top: 50px; 
+          width: 350px;
+          height: 250px;
+        } 
+        .home-contact {
+          background: url('../image/banner/c111.png') no-repeat;
+          height: 400px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 768*/ 
+      
+      @media screen and (max-width: 768px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 12px 0px 5px 0px; 
+        }
+        .languageholder { 
+          float: right; 
+          text-align:center; 
+          margin: 15px 0px 5px 0px;
+        }
+        iframe{
+          padding-top: 10px;
+          width: 645px;
+          height: 430px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 230px;
+        }      
+      } 
+      /* 设置了浏览器宽度不大于768px时 iPad 736*/ 
+      
+      @media screen and (max-width: 736px) { 
+        #logo { 
+          background: url('/image/logo/first.png') no-repeat; 
+          width: 258px; 
+          height: 35px; 
+          margin: 12px 0px 5px 45px; 
+        }
+        .languageholder {
+          text-align: center;
+          margin-right: 5%;           
+          margin-top: 13px;
+        }
+        .navbar-header button.navbar-toggle {
+          margin-right: 45px;
+        }
+        .home-contact {
+          background: url('../image/banner/c1111.png') no-repeat;
+          height: 200px;
+        }
+      } 
+      /* 设置了浏览器宽度不大于480时*/ 
+      @media screen and (max-width: 480px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 14px 5px 5px 25px; 
+        }
+        .languageholder { 
+          float: right; 
+          width: 80px; 
+          text-align:center; 
+          margin: 12px 40px 5px 0px;
+        }
+        iframe{
+          padding-top: 0px;
+          width: 320px;
+          height: 220px;
+        } 
+        .navbar-header button.navbar-toggle {
+          margin-right: 25px;
+        }
+        .home-contact {
+          background: url('../image/banner/c11111.png') no-repeat;
+          height: 130px;
+        }
+        } 
+        @media screen and (max-width: 320px) { 
+          #logo { 
+            background: url('/image/logo/first1.png') no-repeat; 
+            width: 148px; 
+            height: 35px; 
+            margin: 12px 0px 5px 10px;
+          }
+          .languageholder { 
+            float: right; 
+            text-align:center; 
+            margin-right: 5%;           
+            margin-top: 13px;
+          }
+          .navbar-header button.navbar-toggle {
+            margin-right: 15px;
+          }
+          iframe{
+            padding-top: 0px;
+            width: 260px;
+            height: 180px;
+          }
+          .home-contact {
+            background: url('../image/banner/c11111.png') no-repeat;
+            height: 120px;
+          }
+        } 
+      } 
+    </style>
+    
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" class="navbar-brand" href="index.html"></a>
+          <div class="languageholder visible-xs">
+                <ul id="lan-mode-left" class="language-mode">
+                    <li><a href="../index.html" class="language-img"></a></li>
+                </ul>
+          </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="languageholder hidden-xs">
+                <ul class="language-mode">
+                    <li><a href="../index.html" class="language-img"></a></li>
+                </ul>
+          </div>
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="frc.html">FRC</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sponsor.html">Sponsor</a></li>
+            <li><a href="contact.html">Contact</a></li>         
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+
+  <div class="row-p0">
+    <div class="blog-img">
+              <img src="image/blog/b0.jpg" alt="FRC Pitcure" class="img-responsive">
+     </div>
+   </div>  
+        
+  <div class="row-p3">
+     <div class="col-md-3 col-sm-6 col-xs-12 blog-frame">
+       <div class="blog-img">
+         <img src="image/blog/b1.jpg" alt="Home Pitcure" class="img-responsive">
+         <div class="caption">
+           <h3 class="text-center blog-title">Build Robot Train</h3>
+           <p class="blog-content">We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</br></br>
+           We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</p>
+            <p class="blog-btn"><a class="btn btn-lg btn-primary" href="blog/blog-detail-1.html" role="button">Read More</a></p>
+           <div class="page-header blog-line">
+           </div>
+           <div class="page-header blog-line2 text-center">
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-user"></span> Qiao Kai
+                 </button>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-calendar"></span> Feb 24, 2016
+                 </button>
+               </div>
+           </div>
+         </div>
+       </div>
+     </div>
+    <div class="col-md-3 col-sm-6 col-xs-12 blog-frame">
+       <div class="blog-img">
+         <img src="image/blog/b1.jpg" alt="Home Pitcure" class="img-responsive">
+         <div class="caption ">
+           <h3 class="text-center blog-title">Build Robot Train</h3>
+           <p class="blog-content">We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</br></br>
+           We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</p>
+            <p class="blog-btn"><a class="btn btn-lg btn-primary" href="blog/blog-detail-1.html" role="button">Read More</a></p>
+           <div class="page-header blog-line">
+           </div>
+           <div class="page-header blog-line2 text-center">
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-user"></span> Qiao Kai
+                 </button>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-calendar"></span> Feb 24, 2016
+                 </button>
+               </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12 blog-frame">
+       <div class="blog-img">
+         <img src="image/blog/b1.jpg" alt="Home Pitcure" class="img-responsive">
+         <div class="caption ">
+           <h3 class="text-center blog-title">Build Robot Train</h3>
+           <p class="blog-content">We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</br></br>
+           We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</p>
+            <p class="blog-btn"><a class="btn btn-lg btn-primary" href="blog/blog-detail-1.html" role="button">Read More</a></p>
+           <div class="page-header blog-line">
+           </div>
+           <div class="page-header blog-line2 text-center">
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-user"></span> Qiao Kai
+                 </button>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-calendar"></span> Feb 24, 2016
+                 </button>
+               </div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="col-md-3 col-sm-6 col-xs-12 blog-frame">
+       <div class="blog-img">
+         <img src="image/blog/b1.jpg" alt="Home Pitcure" class="img-responsive">
+         <div class="caption ">
+           <h3 class="text-center blog-title">Build Robot Train</h3>
+           <p class="blog-content">We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</br></br>
+           We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.”</p>
+            <p class="blog-btn"><a class="btn btn-lg btn-primary" href="blog/blog-detail-1.html" role="button">Read More</a></p>
+           <div class="page-header blog-line">
+           </div>
+           <div class="page-header blog-line2 text-center">
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-user"></span> Qiao Kai
+                 </button>
+               </div>
+               <div class="col-md-6 col-sm-6 col-xs-6 blog-info">
+                 <button type="button" class="btn btn-default btn-lg blog-user">
+                   <span class="glyphicon glyphicon-calendar"></span> Feb 24, 2016
+                 </button>
+               </div>
+           </div>
+         </div>
+       </div>
+     </div>     
+   </div>
+
+   <footer class="panel-footer">
+    <div class="container-1">
+      <div class="row-p5">
+        <section id="hours" class="col-sm-3">
+          <p>FIRST<br>
+           Robtics Competition <br>
+          For Inspiration and Recognition <br>
+          of Science and Technology </p>
+
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-3">
+          <span>Address:</span><br>
+          No.2, Xihuhuayuan<br>
+          Guiyuan North Road<br>
+          50600, Shenzhen, China
+
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>Powered By:<br>
+          Shenzhen DADALELE <br>
+          Cultrue Communication Co.,Ltd<br>
+          China Urban Youth Robotics Alliance </p>
+           <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>Copyright:<br>
+          Name: Qiao Kai <br>
+          Phone: 137-9896-5581<br>
+          Email: <a class="linkbg" href="mailto:your@email.com">1718688902@qq.com</a>
+        </section>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="row-p0">
+    <div class="footer-last">
+      <a class="pull-left hidden-xs col-md-4 col-sm-6 col-xs-12"> &copy; Copyright 2017. All rights reversed.</a>
+      <div>
+      <a class="text-center col-md-2 hidden-sm hidden-xs"></a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="index.html">Home</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="frc.html">FRC</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="team.html">Team</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="blog.html">Blog</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="sponsor.html">Spon.</a>
+      <a class="text-center col-md-1 col-sm-1 col-xs-2" href="contact.html">Cont.</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery(jquery JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/iKai-script.js"></script>
+  <script type="text/javascript" src="js/user-script.js"></script>
+
+</body>
+</html>

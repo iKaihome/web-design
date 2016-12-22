@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+  <!--Tell internet explore use latest version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iKai Home</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/ikai-style.css">
+  <link rel="stylesheet" type="text/css" href="css/user-style.css">
+
+  <style>
+    /* 设置浏览器宽度不小于1201px时*/ 
+    @media screen and (min-width: 1367px) { 
+      #logo { 
+        background: url('../image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 5px 5px 15px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin-top: 15px; 
+        margin-right: 15px; 
+      }
+    } 
+    /* 设置了浏览器宽度不大于1366px时*/ 
+    @media screen and (max-width: 1366px) { 
+      #logo { 
+        background: url('/image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 5px 5px 25px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin: 15px 30px 5px 10px;
+      }
+    } 
+    /* 设置了浏览器宽度不大于960px时 iPad Pro & Laptop 1024*/  
+    @media screen and (max-width: 1024px) { 
+      #logo { 
+        background: url('/image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 5px 5px 25px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin: 15px 25px 5px 10px;
+      }
+    } 
+    /* 设置了浏览器宽度不大于768px时 iPad 768*/ 
+    
+    @media screen and (max-width: 768px) { 
+      #logo { 
+        background: url('/image/logo/first1.png') no-repeat; 
+        width: 148px; 
+        height: 35px; 
+        margin: 12px 0px 5px 0px; 
+      }
+      .languageholder { 
+        float: right; 
+        text-align:center; 
+        margin: 15px 0px 5px 0px;
+      } 
+      iframe {
+          width: 450px !important;
+          height: 320px !important;
+      }    
+    } 
+    /* 设置了浏览器宽度不大于768px时 iPad 736*/ 
+    
+    @media screen and (max-width: 736px) { 
+      #logo { 
+        background: url('/image/logo/first.png') no-repeat; 
+        width: 258px; 
+        height: 35px; 
+        margin: 12px 0px 5px 45px; 
+      }
+      .languageholder {
+        text-align: center;
+        margin-right: 5%;           
+        margin-top: 13px;
+      }
+      .navbar-header button.navbar-toggle {
+        margin-right: 45px;
+      }
+      iframe {
+          width: 400px !important;
+          height: 250px !important;
+      } 
+    } 
+    /* 设置了浏览器宽度不大于480时*/ 
+    @media screen and (max-width: 480px) { 
+      #logo { 
+        background: url('/image/logo/first1.png') no-repeat; 
+        width: 148px; 
+        height: 35px; 
+        margin: 14px 5px 5px 25px; 
+      }
+      .languageholder { 
+        float: right; 
+        width: 80px; 
+        text-align:center; 
+        margin: 12px 40px 5px 0px;
+      } 
+      .navbar-header button.navbar-toggle {
+        margin-right: 25px;
+      }
+      } 
+      @media screen and (max-width: 380px) { 
+        iframe {
+          width: 340px !important;
+          height: 250px !important;
+        } 
+      }
+      @media screen and (max-width: 340px) { 
+        #logo { 
+          background: url('/image/logo/first1.png') no-repeat; 
+          width: 148px; 
+          height: 35px; 
+          margin: 12px 0px 5px 10px;
+        }
+        .languageholder { 
+          float: right; 
+          text-align:center; 
+          margin-right: 5%;           
+          margin-top: 13px;
+        }
+        .navbar-header button.navbar-toggle {
+          margin-right: 15px;
+        }
+        iframe {
+          width: 290px !important;
+          height: 250px !important;
+        }
+      } 
+    } 
+  </style>
+
+</head>
+
+<body>
+  <header>
+   <nav class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container-fluid">
+       <!-- Brand and toggle get grouped for better mobile display -->
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a id="logo" class="navbar-brand" href="index.html"></a>
+         <div class="languageholder visible-xs">
+               <ul id="lan-mode-left" class="language-mode">
+                   <li><a href="../index.html" class="language-img"></a></li>
+               </ul>
+         </div>
+       </div>
+
+       <!-- Collect the nav links, forms, and other content for toggling -->
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <div class="languageholder hidden-xs">
+               <ul class="language-mode">
+                   <li><a href="../index.html" class="language-img"></a></li>
+               </ul>
+         </div>
+         <ul id="nav-list" class="nav navbar-nav navbar-right">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="frc.html">FRC</a></li>
+           <li><a href="team.html">Team</a></li>
+           <li><a href="blog.html">Blog</a></li>
+           <li><a href="sponsor.html">Sponsor</a></li>
+           <li><a href="contact.html">Contact</a></li>          
+         </ul>
+       </div><!-- /.navbar-collapse -->
+     </div><!-- /.container-fluid -->
+   </nav>
+  </header>
+
+
+  <!--page-header -->
+  <div class="page-header">
+    <h1 class="text-center"><small>Contact Us</small></h1>
+  </div>
+  <div class="row-p0">
+    <div class="col-md-8 col-sm-8 col-xs-12">
+      <div class="visible-lg">
+        <iframe width='780' height='350' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/5AyDJ_07C25To'></iframe>'
+      </div> 
+      <div class="visible-md">
+        <iframe width='580' height='350' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/1iyfK_05725W7'></iframe>'
+      </div> 
+      <div class="visible-sm">
+        <iframe width='450' height='350' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/3Htul_0D525EM'></iframe>'
+      </div> 
+      <div class="visible-xs">
+        <iframe width='380' height='250' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://f.amap.com/1Ubx8_09425Pm'></iframe>'
+      </div> 
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12" style="color: #000;">
+       <h3> Address:</h3><br>
+           <span class="glyphicon glyphicon-map-marker"></span> &nbsp; <a href="http://uri.amap.com/navigation?from=116.478346,39.997361,startpoint&to=116.3246,39.966577,endpoint&mode=car&policy=1&coordinate=gaode&src=mypage">No.2, Guiyuan North Road, Shenzhen, China</a> <br>
+           <a class="btn btn-lg btn" href="iosamap://navi?sourceApplication=appname&poiname=fangheng&lat=22.5590939&lon=114.0994789&dev=1&style=2" role="button"><span class="glyphicon glyphicon-hand-right"></span> &nbsp;IOS Amap</a>
+           <a class="btn btn-lg btn" href="androidamap://navi?sourceApplication=appname&poiname=fangheng&lat=22.5590939&lon=114.0994789&dev=1&style=2" role="button"><span class="glyphicon glyphicon-hand-right"></span>&nbsp;Android Amap</a>
+      <h3> Contact:</h3><br>
+          <span class="glyphicon glyphicon-earphone"></span> &nbsp; <a href="tel:+86 137-9896-5581">+86 137-9896-5581</a><br>
+      <h3> Email:</h3><br>
+           <span class="glyphicon glyphicon-envelope"></span> <a class="linkbg" href="mailto:1718688902@qq.com"> &nbsp; 1718688902@qq.com</a>
+    </div> 
+  </div>
+
+   <footer class="panel-footer">
+    <div class="container-1">
+      <div class="row-p5">
+        <section id="hours" class="col-sm-3">
+          <p>FIRST<br>
+           Robtics Competition <br>
+          For Inspiration and Recognition <br>
+          of Science and Technology </p>
+
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-3">
+          <span>Address:</span><br>
+          No.2, Xihuhuayuan<br>
+          Guiyuan North Road<br>
+          50600, Shenzhen, China
+
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>Powered By:<br>
+          Shenzhen DADALELE <br>
+          Cultrue Communication Co.,Ltd<br>
+          China Urban Youth Robotics Alliance </p>
+           <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-3">
+          <p>Copyright:<br>
+          Name: Qiao Kai <br>
+          Phone: 137-9896-5581<br>
+          Email: <a class="linkbg" href="mailto:your@email.com">1718688902@qq.com</a>
+        </section>
+
+      </div>
+    </div>
+  </footer>
+
+    <div class="row-p0">
+       <div class="footer-last">
+         <a class="pull-left hidden-xs col-md-5 col-sm-6 col-xs-12">&copy; Copyright 2016 QiaoKai. All rights reversed.</a>
+         <div>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="index.html">Home</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="frc.html">FRC</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="team.html">Team</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="blog.html">Blog</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="sponsor.html">Spon.</a>
+         <a class="text-center col-md-1 col-sm-1 col-xs-2" href="contact.html">Cont.</a>
+         </div>
+       </div>
+    </div>
+
+
+  <!-- jquery(jquery JS plugins depend on it) -->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/iKai-script.js"></script>
+  <script type="text/javascript" src="js/user-script.js"></script>
+
+</body>
+</html>
