@@ -21,6 +21,12 @@ body{
   margin-right: 5%;
   overflow: hidden;
 }
+.row-p5c {
+  overflow: hidden;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .frc-video {
   overflow: hidden; 
   text-align: center;
